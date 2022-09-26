@@ -1,14 +1,10 @@
 #!/usr/bin/python3
+
 def max_integer(my_list=[]):
     if len(my_list) == 0:
-        return (None)
-
-    big = my_list[0]
-    for i in range(len(my_list)):
-        if my_list[i] > big:
-            big = my_list[i]
-    return (big)
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
+        return None
+    ret = my_list[0]
+    for num in my_list:
+        if num > ret:
+            ret = num
+    return ret
